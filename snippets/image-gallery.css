@@ -1,0 +1,109 @@
+/* Product Image Gallery - Styles */
+
+.demo-container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.demo-container h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.demo-container > p {
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Product Gallery Component */
+.product-gallery {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Main image container */
+.main-image-container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.main-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+}
+
+/* Fade effect during image change */
+.main-image.fade {
+    opacity: 0.5;
+}
+
+/* Thumbnail container */
+.thumbnail-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Individual thumbnails */
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0.7;
+}
+
+.thumbnail:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Active thumbnail styling */
+.thumbnail.active {
+    border-color: #2196F3;
+    opacity: 1;
+    box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.2);
+}
+
+.instructions {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .main-image-container {
+        height: 300px;
+    }
+    
+    .thumbnail {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .thumbnail-container {
+        gap: 8px;
+    }
+}

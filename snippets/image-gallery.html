@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Image Gallery - Demo</title>
+    <link rel="stylesheet" href="image-gallery.css">
+</head>
+<body>
+    <div class="demo-container">
+        <h1>Product Image Gallery with Thumbnails</h1>
+        <p>Click on thumbnails to view different product images</p>
+        
+        <!-- Product Image Gallery Component -->
+        <div class="product-gallery">
+            <div class="main-image-container">
+                <img src="https://via.placeholder.com/600x600/2196F3/FFFFFF?text=Front+View" 
+                     alt="Product Main View" 
+                     class="main-image">
+            </div>
+            
+            <div class="thumbnail-container">
+                <img src="https://via.placeholder.com/100x100/2196F3/FFFFFF?text=Front" 
+                     alt="Front View" 
+                     class="thumbnail active"
+                     data-full="https://via.placeholder.com/600x600/2196F3/FFFFFF?text=Front+View">
+                
+                <img src="https://via.placeholder.com/100x100/4CAF50/FFFFFF?text=Back" 
+                     alt="Back View" 
+                     class="thumbnail"
+                     data-full="https://via.placeholder.com/600x600/4CAF50/FFFFFF?text=Back+View">
+                
+                <img src="https://via.placeholder.com/100x100/FF9800/FFFFFF?text=Side" 
+                     alt="Side View" 
+                     class="thumbnail"
+                     data-full="https://via.placeholder.com/600x600/FF9800/FFFFFF?text=Side+View">
+                
+                <img src="https://via.placeholder.com/100x100/9C27B0/FFFFFF?text=Detail" 
+                     alt="Detail View" 
+                     class="thumbnail"
+                     data-full="https://via.placeholder.com/600x600/9C27B0/FFFFFF?text=Detail+View">
+                
+                <img src="https://via.placeholder.com/100x100/F44336/FFFFFF?text=Inside" 
+                     alt="Inside View" 
+                     class="thumbnail"
+                     data-full="https://via.placeholder.com/600x600/F44336/FFFFFF?text=Inside+View">
+            </div>
+        </div>
+        
+        <p class="instructions">Click any thumbnail to change the main image</p>
+    </div>
+    
+    <script src="image-gallery.js"></script>
+</body>
+</html>

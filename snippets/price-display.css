@@ -1,0 +1,92 @@
+/* Price Display with Discount - Styles */
+
+.demo-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.demo-container h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.demo-container > p {
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card h3 {
+    margin: 0 0 15px 0;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Price Display Component */
+.price-display {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Original price - crossed out */
+.original-price {
+    font-size: 16px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+/* Discount badge */
+.discount-badge {
+    display: inline-block;
+    background-color: #ff4444;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+/* Final price - emphasized */
+.final-price {
+    font-size: 32px;
+    font-weight: bold;
+    color: #4CAF50;
+    margin: 5px 0;
+}
+
+/* Savings text */
+.savings-text {
+    font-size: 14px;
+    color: #4CAF50;
+    font-weight: 600;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .product-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .final-price {
+        font-size: 28px;
+    }
+}

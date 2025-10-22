@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Display with Discount - Demo</title>
+    <link rel="stylesheet" href="price-display.css">
+</head>
+<body>
+    <div class="demo-container">
+        <h1>Price Display with Discount Calculator</h1>
+        <p>Automatically calculates and displays savings</p>
+        
+        <div class="product-cards">
+            <!-- Example 1: 20% discount -->
+            <div class="product-card">
+                <h3>Wireless Headphones</h3>
+                <div class="price-display" data-original-price="99.99" data-discount-percent="20">
+                    <span class="original-price"></span>
+                    <span class="discount-badge"></span>
+                    <span class="final-price"></span>
+                    <span class="savings-text"></span>
+                </div>
+            </div>
+            
+            <!-- Example 2: 35% discount -->
+            <div class="product-card">
+                <h3>Smart Watch</h3>
+                <div class="price-display" data-original-price="199.99" data-discount-percent="35">
+                    <span class="original-price"></span>
+                    <span class="discount-badge"></span>
+                    <span class="final-price"></span>
+                    <span class="savings-text"></span>
+                </div>
+            </div>
+            
+            <!-- Example 3: 50% discount -->
+            <div class="product-card">
+                <h3>Bluetooth Speaker</h3>
+                <div class="price-display" data-original-price="79.99" data-discount-percent="50">
+                    <span class="original-price"></span>
+                    <span class="discount-badge"></span>
+                    <span class="final-price"></span>
+                    <span class="savings-text"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="price-display.js"></script>
+</body>
+</html>
