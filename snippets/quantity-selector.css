@@ -1,0 +1,121 @@
+.demo-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.demo-container h1 {
+    color : #333;
+    margin-bottom: 10px;
+}
+
+.demo-container p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.product-card{
+    background: #ffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0 ,0.1);
+}
+
+.product-card h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.price {
+    font-size: 24px;
+    color: #4CAF50;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/*Quantity Selector Components*/
+.quantity-selector {
+    display: inline;
+    align-items: center;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.qty-btnn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: #f5f5f5;
+    color: #333;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.qty-btnn:hover {
+    background-color: #e0e0e0;
+}
+
+.qty-btnn:active {
+    background-color: #d0d0d0;
+
+}
+
+.qty-btn:disabled{
+    background-color: #f0f0f0;
+    color: #aaa;
+    cursor: not-allowed;
+}
+
+.qty-input{
+    width: 60px;
+    height: 40px;
+    border: none;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    -moz-appearance: textfield ;
+    appearance: textfield;
+}
+
+.qty-input::-webkit-outer-spin-button,
+.qty-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.demo-add-to-cart{
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+.demo-add-to-cart:hover{
+    background-color: #45a049;
+}
+
+.total-price{
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.total-price span{
+    font-weight: bold;
+    color: #4CAF50;
+}
