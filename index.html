@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Snippet Library - Demo Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI' Tahoma,Geneva, Verdana, sans-serif;
+            background-color: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 10px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .snippet-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .snippet-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            padding: 25px;
+            transition: transform 0.3s, box-shadow 0.3s ease;
+        }
+
+        .snippet-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .snippet-card h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #333;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .snippet-card p {
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .snippet-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #667eea;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+            font-weight: 600;
+        }
+
+        .snippet-link:hover {
+            background-color: #764ba2;
+        }
+
+        .features {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            padding: 30px;
+            margin-top: 40px;
+        }
+
+
+        .features h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size:2em;
+        }
+
+        .features ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .features li:last-child{
+            border-bottom: none;
+        }
+
+        .features li::before {
+            content: "✔";
+            color: #4caf50;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.3);
+        }
+
+        @media (max-width:768px){
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .snippet-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>E-commerce Snippet Library</h1>
+            <p>A collection of reusable code snippets for product pages.</p>
+        </div>
+
+        <div class="snippet-grid">
+            <div class="snippet-card">
+                <h2>Image Zoom on Hover</h2>
+                <p>Allow customers to examine product details by zooming into images on hover</p>
+                <a href="snippets/image-zoom.html" class="snippet-link">View Demo</a>
+            </div>
+
+            <div class="snippet-card">
+                <h2>Quantity Selector</h2>
+                <p>Quantity selection with increment/decrement buttons and validations</p>
+                <a href="snippets/quantity-selector.html" class="snippet-link">View Demo</a>
+            </div>
+
+            <div class="snippet-card">
+                <h2> Image Gallery</h2>
+                <p>Interactive product gallery with clickable thumbnails</p>
+                <a href="snippets/image-gallery.html" class="snippet-link">View Demo</a>
+            </div>
+
+            <div class="snippet-card">
+                <h2>Add to cart </h2>
+                <p>Animated button with visual feedback for adding products to cart</p>
+                <a href="snippets/add-to-cart.html" class="snippet-link">View Demo</a>
+            </div>
+
+            <div class="snippet-card">
+                <h2>Rating Stars</h2>
+                <p>Visual star rating display with support for half-star ratings</p>
+                <a href="snippets/rating-stars.html" class="snippet-link">View Demo</a>
+            </div>
+
+            <div class="features">
+                <h2>Features</h2>
+                <ul>
+                    <li>Fully responsive design</li>
+                    <li>self contained and reusable snippets</li>
+                    <li>Customizable styles to match your brand</li>
+                    <li>Modern CSS3 animations and transitions</li>
+                </ul>
+            </div>
+
+            <div class="footer">
+                <p>Check the readme for integration instructions and examples</p>
+                <p style="margin-top:10px; opacity:0.8;">Built for e-commerce development</p>
+        </div>
+
+    </div>
+</body>
+</html>
